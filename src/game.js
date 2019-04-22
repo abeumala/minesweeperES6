@@ -35,17 +35,14 @@ class Game {
 		bombsCountdown.innerHTML = bombsLeft;
 	}
 
-	startTimer () {
-		this.timer.start()
-	}
-
-	stopTimer () {
-		this.timer.stop();
-	}
+	startTimer = () => this.timer.start();
 	
-	clearTimer () {
-		this.timer.reset();
-	}
+
+	stopTimer = () => this.timer.stop();
+	
+
+	clearTimer = () => this.timer.reset();
+		
 	
 	gameOver () {
 		this.stopTimer()

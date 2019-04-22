@@ -38,6 +38,4 @@ LocalStorage.prototype.getUser = function(username) {
 	}
 }
 
-LocalStorage.prototype.clear = function(user) {
-	store.clearAll(); //delete db
-}
+LocalStorage.prototype.clear = (user) => store.clearAll();
